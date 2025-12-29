@@ -25,7 +25,7 @@ export default function Home() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
 
-            <img src="/images/logo.jpg" alt="Medivanta Logo" className="h-8 w-auto" />
+            <img src="/images/logo.png" alt="Medivanta Logo" className="h-8 w-auto" />
           </div>
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
             <a href="#solutions" className="hover:text-primary transition-colors">Solutions</a>
@@ -401,12 +401,60 @@ export default function Home() {
         </section>
       </main>
 
+      {/* Contact Form Section */}
+      <section id="contact" className="py-24 bg-slate-50">
+        <div className="container max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Get in Touch</h2>
+            <p className="text-lg text-muted-foreground">
+              Ready to transform your healthcare business? Send us a message and we'll get back to you shortly.
+            </p>
+          </div>
+          
+          <div className="bg-white rounded-2xl shadow-sm border p-8 md:p-12">
+            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <label htmlFor="name" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Name</label>
+                  <input type="text" id="name" className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" placeholder="John Doe" />
+                </div>
+                <div className="space-y-2">
+                  <label htmlFor="email" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Email</label>
+                  <input type="email" id="email" className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" placeholder="john@example.com" />
+                </div>
+              </div>
+              
+              <div className="space-y-2">
+                <label htmlFor="subject" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Subject</label>
+                <select id="subject" className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                  <option value="" disabled selected>Select a topic</option>
+                  <option value="demo">Request a Demo</option>
+                  <option value="sales">Sales Inquiry</option>
+                  <option value="partnership">Partnership Opportunity</option>
+                  <option value="support">Technical Support</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div className="space-y-2">
+                <label htmlFor="message" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Message</label>
+                <textarea id="message" className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" placeholder="Tell us about your needs..."></textarea>
+              </div>
+              
+              <Button type="submit" className="w-full md:w-auto px-8 h-11 text-base">
+                Send Message
+              </Button>
+            </form>
+          </div>
+        </div>
+      </section>
+
       <footer className="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
         <div className="container grid md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4 text-slate-50">
 
-              <img src="/images/logo.jpg" alt="Medivanta Logo" className="h-8 w-auto brightness-0 invert" />
+              <img src="/images/logo.png" alt="Medivanta Logo" className="h-8 w-auto brightness-0 invert" />
             </div>
             <p className="text-sm max-w-xs">
               Digital Empowerment Platform for Consumer Healthcare, committed to promoting the digital transformation of the medical industry through SaaS, Supply Chain, and Fintech.
