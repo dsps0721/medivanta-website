@@ -34,7 +34,7 @@ export default function Home() {
             <a href="#process" className="hover:text-primary transition-colors">Process</a>
             <a href="#about" className="hover:text-primary transition-colors">About Us</a>
           </nav>
-          <Button size="sm" className="font-medium">Book a Demo</Button>
+          <Button size="sm" className="font-medium" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>Book a Demo</Button>
         </div>
       </header>
 
