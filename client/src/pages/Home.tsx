@@ -429,8 +429,7 @@ export default function Home() {
             <h4 className="text-slate-50 font-bold mb-4">Contact Us</h4>
             <ul className="space-y-2 text-sm">
               <li>support@medivanta.ca</li>
-              <li>+1 (888) 123-4567</li>
-              <li>Toronto, ON, Canada</li>
+
             </ul>
           </div>
         </div>
