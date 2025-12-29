@@ -25,7 +25,7 @@ export default function Home() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
 
-            <img src="/images/logo.png" alt="Medivanta Logo" className="h-8 w-auto" />
+            <img src="/images/logo.png" alt="Medivanta Logo" className="h-12 w-auto" />
           </div>
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
             <a href="#solutions" className="hover:text-primary transition-colors">Solutions</a>
@@ -454,7 +454,7 @@ export default function Home() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4 text-slate-50">
 
-              <img src="/images/logo.png" alt="Medivanta Logo" className="h-8 w-auto brightness-0 invert" />
+              <img src="/images/logo.png" alt="Medivanta Logo" className="h-16 w-auto brightness-0 invert" />
             </div>
             <p className="text-sm max-w-xs">
               Digital Empowerment Platform for Consumer Healthcare, committed to promoting the digital transformation of the medical industry through SaaS, Supply Chain, and Fintech.
