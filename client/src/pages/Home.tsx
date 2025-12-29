@@ -24,10 +24,8 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center text-primary-foreground font-bold text-xl">
-              M
-            </div>
-            <span className="text-xl font-bold tracking-tight text-foreground">Medivanta</span>
+
+            <img src="/images/logo.jpg" alt="Medivanta Logo" className="h-8 w-auto" />
           </div>
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
             <a href="#solutions" className="hover:text-primary transition-colors">Solutions</a>
@@ -407,10 +405,8 @@ export default function Home() {
         <div className="container grid md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4 text-slate-50">
-              <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center text-primary-foreground font-bold text-xl">
-                M
-              </div>
-              <span className="text-xl font-bold">Medivanta</span>
+
+              <img src="/images/logo.jpg" alt="Medivanta Logo" className="h-8 w-auto brightness-0 invert" />
             </div>
             <p className="text-sm max-w-xs">
               Digital Empowerment Platform for Consumer Healthcare, committed to promoting the digital transformation of the medical industry through SaaS, Supply Chain, and Fintech.
