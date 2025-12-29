@@ -32,7 +32,7 @@ export default function Home() {
             <a href="#features" className="hover:text-primary transition-colors">Features</a>
             <a href="#tech" className="hover:text-primary transition-colors">Technology</a>
             <a href="#process" className="hover:text-primary transition-colors">Process</a>
-            <a href="#about" className="hover:text-primary transition-colors">About Us</a>
+            <a href="#vision" className="hover:text-primary transition-colors">About Us</a>
           </nav>
           <Button size="sm" className="font-medium" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>Book a Demo</Button>
         </div>
@@ -58,10 +58,10 @@ export default function Home() {
                 Medivanta leverages big data and AI to connect medical institutions, doctors, and consumers. We provide a one-stop intelligent solution integrating SaaS, Supply Chain, and Financial Services to help institutions reduce costs and increase efficiency.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="h-12 px-8 text-base shadow-lg shadow-primary/20">
+                <Button size="lg" className="h-12 px-8 text-base shadow-lg shadow-primary/20" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
                   Explore Solutions <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-                <Button size="lg" variant="outline" className="h-12 px-8 text-base">
+                <Button size="lg" variant="outline" className="h-12 px-8 text-base" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
                   Learn More
                 </Button>
               </div>
@@ -382,7 +382,7 @@ export default function Home() {
              <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background"></div>
           </div>
           
-          <div className="container relative z-10 text-center">
+          <div id="vision" className="container relative z-10 text-center scroll-mt-24">
             <div className="inline-flex items-center rounded-full border px-4 py-1.5 text-sm font-medium bg-slate-100 mb-8">
               <Globe2 className="mr-2 h-4 w-4" />
               Our Vision
@@ -394,7 +394,7 @@ export default function Home() {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-12">
               Medivanta is committed to breaking the time and space limits of medical services through technology, making high-quality medical resources accessible, and safeguarding the health of consumers worldwide.
             </p>
-            <Button size="lg" className="h-14 px-10 text-lg rounded-full shadow-xl shadow-primary/20">
+            <Button size="lg" className="h-14 px-10 text-lg rounded-full shadow-xl shadow-primary/20" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               Join Our Ecosystem
             </Button>
           </div>
